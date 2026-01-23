@@ -3,7 +3,7 @@ from app.db.database import Base
 
 
 class ShortURL(Base):
-    __table_name__ = "short_urls"
+    __tablename__ = "short_urls"
 
     id = Column(Integer, primary_key=True)
     original_url = Column(String, nullable=False)
